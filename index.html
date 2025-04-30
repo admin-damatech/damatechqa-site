@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Damatech Trading & Contracting and Services</title>
+  <style>
+    body {
+      font-family: "Gill Sans MT", Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #dce3e6;
+    }
+
+    header {
+      background-color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      width: 150px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 2em;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3em 1em;
+      background-color: #f0f4f5;
+    }
+
+    footer {
+      background-color: #091638;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  </style>
+  <script>
+    function showLang(lang) {
+      document.getElementById('about-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('about-ar').style.display = lang === 'ar' ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Damatech Logo" class="logo"/>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#group-companies">Group Companies</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://outlook.office365.com" target="_blank">Employee Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Damatech Trading & Contracting and Services</h1>
+      <p>Innovative and Energy Efficient Building Technology Solutions</p>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>
+        About Us
+        <span class="language-toggle" style="float: right;">
+          <button onclick="showLang('en')">English</button>
+          <button onclick="showLang('ar')">العربية</button>
+        </span>
+      </h2>
+
+      <div id="about-en" class="lang-content">
+        <p>
+          At Damatech Trading & Contracting and Services, we specialize in delivering cutting-edge solutions and services across a wide range of intelligent building technologies.
+        </p>
+        <p>
+          With deep expertise and a customer-focused approach, we provide comprehensive support for both new installations and ongoing system maintenance.
+        </p>
+        <p>
+          Driven by innovation and reliability, Damatech is your trusted partner for intelligent, efficient, and secure building environments.
+        </p>
+        <h3>Vision</h3>
+        <p>
+          To be the leading provider of smart and energy-efficient building technologies in the region.
+        </p>
+        <h3>Mission</h3>
+        <p>
+          We are committed to providing the highest quality products and services exceeding our client’s expectations.
+        </p>
+        <p>
+          We shall continue to expand in equipment and facilities, and engage in training and certification programs to further serve customers with utmost excellence and professionalism.
+        </p>
+        <p>
+          As we carry out our mission, we shall be guided by values of integrity, reliability, commitment, and collaboration. Our commitment to service is to delivering results, exceeding expectations.
+        </p>
+        <p><a href="assets/company-profile.pdf" download>Download Company Profile</a></p>
+      </div>
+
+      <div id="about-ar" class="lang-content" style="display: none; direction: rtl; text-align: right;">
+        <p>
+في داماتيك للتجارة والمقاولات والخدمات، نتخصص في تقديم حلول وخدمات متطورة لمجموعة واسعة من تقنيات المباني الذكية.
+        </p>
+        <p>
+بخبرتنا الواسعة ونهجنا الذي يركز على العملاء، نقدم دعمًا شاملًا للتركيبات الجديدة والصيانة المستمرة للأنظمة.
+        </p>
+        <p>
+بفضل الابتكار والموثوقية، داماتيك هي شريككم الموثوق لبيئات بناء ذكية وفعالة وآمنة.
+        </p>
+
+        <h3>الرؤية</h3>
+        <p>
+          أن نكون المزود الرائد لتقنيات المباني الذكية والموفرة للطاقة في المنطقة.
+        </p>
+        <h3>الرسالة</h3>
+        <p>
+          نحن ملتزمون بتقديم أفضل المنتجات والخدمات بجودة عالية تتجاوز توقعات عملائنا.
+        </p>
+        <p>
+          سنواصل التوسع في المعدات والمرافق، والانخراط في برامج التدريب والشهادات لخدمة عملائنا بأعلى درجات التميز والاحترافية.
+        </p>
+        <p>
+          أثناء تنفيذ مهمتنا، سنسترشد بقيم النزاهة والموثوقية والالتزام والتعاون. التزامنا بالخدمة يتمثل في تحقيق النتائج وتجاوز التوقعات.
+        </p>
+        <p><a href="assets/company-profile.pdf" download>تحميل ملف الشركة</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul>
+         <p><li>Building Management Systems (BMS)</li>
+      </p>
+         <p><li>HVAC PICV Valve Packages and Actuators</li>
+      </p>
+         <p><li>Lighting Control Systems</li>
+      </p>
+         <p><li>Smart Home Automation</li>
+      </p>
+         <p><li>Guest Room Management Systems</li>
+      </p>
+         <p><li>Curtain, Blinds, and Gate Automation</li>
+      </p>
+         <p><li>Access Control & CCTV Surveillance</li>
+      </p>
+         <p><li>Public Address and Audio-Visual Systems</li>
+      </p>
+         <p><li>Video Intercom Solutions</li>
+      </p>
+         <p><li>Structured Cabling Infrastructure</li>
+      </p>
+         <p><li>Annual Planned Preventive Maintenance (PPM)</li>
+      </p>
+         <p><li>Electrical & ELV System Works</li>
+      </p>
+      </ul>
+    </div>
+  </section>
+
+  <section id="partners" class="section">
+    <div class="container">
+      <h2>Our Partners</h2>
+      <div style="text-align: center;">
+        <img src="assets/siemens.png" alt="Siemens Logo" style="max-width: 250px;" />
+        <p>Advanced Partner - Building Technologies</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="group-companies" class="section">
+    <div class="container">
+      <h2>Our Group Companies</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 60px;">
+        <div style="text-align: center;">
+          <img src="assets/smart-control.png" alt="Smart Control Jordan" style="max-width: 200px;" />
+          <p>Smart Control - Jordan</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="assets/adma-solutions.png" alt="Adma Solutions Contracting KSA" style="max-width: 200px;" />
+          <p>Adma Solutions Contracting - Saudi Arabia</p>
+        </div>
+        <div style="text-align: center;">
+          <img src="assets/edma-renewable.png" alt="EDMA Renewable Trading KSA" style="max-width: 200px;" />
+          <p>EDMA Renewable Trading - Saudi Arabia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Address:</p>
+      <p>Building No: 11, Office No: 30</p>
+      <p>Barwa Village, Airport Road</p>
+      <p>Doha, Qatar</p>
+      <p>Phone: +974 4006 4884</p>
+      <p>Mobile: +974 6631 7757, +974 7080 0705</p>
+      <p>Email: info@damatechqa.com</p>
+      <p><a href="https://www.linkedin.com" target="_blank">Visit our LinkedIn</a></p>
+
+      <!-- Embedded Google Map -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.67132123595!2d51.57831777431096!3d25.21430443100959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45cf0007c66599%3A0x6be4c9851342f1a1!2sDamatech%20Trading%20and%20Contracting%20%26%20Services!5e0!3m2!1sen!2sqa!4v1746003357299!5m2!1sen!2sqa" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <h3>Enquiry Form</h3>
+      <form action="https://formsubmit.co/info@damatechqa.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Damatech Trading & Contracting and Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
