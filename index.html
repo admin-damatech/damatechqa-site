@@ -1,266 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Damatech Trading & Contracting and Services</title>
-  <style>
-    body {
-      font-family: "Gill Sans MT", Tahoma, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #dce3e6;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damatech Trading & Contracting and Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/templatemo-upright.css">
 
-    header {
-      background-color: white;
-      padding: 1em 2em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      width: 150px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-    }
-
-    .section {
-      padding: 2em;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 3em 1em;
-      background-color: #f0f4f5;
-    }
-
-    footer {
-      background-color: #091638;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-      }
-    }
-  </style>
-  <script>
-    function showLang(lang) {
-      document.getElementById('about-en').style.display = lang === 'en' ? 'block' : 'none';
-      document.getElementById('about-ar').style.display = lang === 'ar' ? 'block' : 'none';
-    }
-  </script>
 </head>
-<body>
-  <header>
-    <img src="assets/logo.png" alt="Damatech Logo" class="logo"/>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#group-companies">Group Companies</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://outlook.office365.com" target="_blank">Employee Login</a></li>
-      </ul>
-    </nav>
-  </header>
+<body>    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Leftside bar -->
+            <div id="tm-sidebar" class="tm-sidebar"> 
+                <nav class="tm-nav">
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <div class="tm-brand-box">
+                            <h1 class="tm-brand">Damatech</h1>
+                        </div>                
+                        <ul id="tm-main-nav">
+                            <li class="nav-item">                                
+                                <a href="#home" class="nav-link current">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-home nav-icon"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#services" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-briefcase nav-icon"></i>
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#partners" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-user-friends nav-icon"></i>
+                                    Partners
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#group" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-globe nav-icon"></i>
+                                    Group
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-envelope nav-icon"></i>
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://outlook.office365.com" class="nav-link external" target="_parent" rel="sponsored">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-at nav-icon"></i>
+                                    Emp Login
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="mb-3 tm-mt-100">
+                        Design: <a href="https://damatechqa.com" target="_parent" rel="sponsored">Damatech Qatar</a>
+                    </footer>
+                </nav>
+            </div>
+            
+            <div class="tm-main">
+                <!-- Home section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpeg"></div>                   
+                    <section id="home" class="tm-section">
+                        <h2 class="tm-text-primary">Damatech Trading & Contracting and Services </h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 tm-col-home mb-4">
+                                <div class="tm-text-container">                                                                         
+                                   <div class="tm-icon-container mb-5 mr-0 ml-auto">
+                                          <img src="img/damatechlogo.jpg" alt="Custom Icon" style="width: 350px;">  
+                                        
+                                    </div>                                
+                                    <p>
+                                          At Damatech Trading & Contracting and Services, we specialize in delivering cutting-edge solutions and services across a wide range of intelligent building technologies. 
+                                    </p>
+                                    
+                                    <p>
+                                        With deep expertise and a customer-focused approach, we provide comprehensive support for both new installations and ongoing system maintenance.  
+                                    </p>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-6 tm-col-home mb-4">
+                                <div class="tm-text-container">
+                                    <div class="tm-icon-container mb-5 mr-0 ml-auto">
+                                        
+                                    </div>                                 
+                                    <p>
+                                        Driven by innovation and reliability, Damatech is your trusted partner for intelligent, efficient, and secure building environments. 
+                                    </p>
+                                                                    
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="tm-hr-short mb-5">
+                        <div class="row tm-row-home">                            
+                            <div class="tm-col-home tm-col-home-l">
+                                <div class="media mb-4">
+                                    <i class="fas fa-crosshairs fa-4x tm-post-icon tm-text-primary"></i>
+                                    <div class="media-body">
+                                        <a href="#" class="d-block mb-2 tm-text-primary tm-post-link">Our Vision</a>  
+                                        <p>
+                                            To be the leading provider of smart and energy-efficient building technologies in the region. 
+                                        </p>
+                                    </div>                                    
+                                </div>
+                                <div class="media mb-4">
+                                    <i class="fas fa-check-double fa-4x tm-post-icon tm-text-primary"></i>
+                                    <div class="media-body">
+                                        <a href="#" class="d-block mb-2 tm-text-primary tm-post-link">Our Mission</a>  
+                                        <p>
+                                            We are dedicated to delivering exceptional products and services with integrity, reliability, and professionalism—exceeding client 
+                                            expectations through continuous growth, innovation, and collaboration.
+                                        </p>
+                                    </div>                                    
+                                </div>
+                                <div class="media mb-4">
+                                    <i class="fas fa-folder-minus fa-4x tm-post-icon tm-text-primary"></i>
+                                    <div class="media-body">
+                                        <a href="#" class="d-block mb-2 tm-text-primary tm-post-link">Company Profile</a>  
+                                        <p>
+                                            <p><a href="img/company-profile.pdf" download>Download our Company Profile from here</a></p>
+                                        </p>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="tm-col-home mr-0 ml-auto">
+                                <div class="tm-img-home-container"></div>                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Services section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-02.jpg"></div>                   
+                    <section id="services" class="tm-section">
+                        <h2 class="tm-text-primary">Our Services</h2>
+                        <hr class="mb-5">
+                        
+                        <div class="tm-gallery">
+                            <figure class="effect-honey tm-gallery-item portrait">
+                                <img src="img/gallery/tn/bms.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Building Management System</i></h2>
+                                    <a href="img/gallery/bms.jpg">View more</a>						
+                                </figcaption>			
+                            </figure>
+                            <figure class="effect-honey tm-gallery-item building">
+                                <img src="img/gallery/tn/picv.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>PICV Valve Packages and Actuators</i></h2>
+                                    <a href="img/gallery/picv.jpg">View more</a>						
+                                </figcaption>			
+                            </figure>  
+                            <figure class="effect-honey tm-gallery-item nature">
+                                <img src="img/gallery/tn/lighting.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Lighting Control Systems</i></h2>
+                                    <a href="img/gallery/lighting.jpg">View more</a>						
+                                </figcaption>			
+                            </figure>
+                            <figure class="effect-honey tm-gallery-item animal">
+                                <img src="img/gallery/tn/has.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Smart Home Automation</i></h2>
+                                    <a href="img/gallery/has.jpg">View more</a>						
+                                </figcaption>			
+                            </figure> 
+                            <figure class="effect-honey tm-gallery-item building">
+                                <img src="img/gallery/tn/grms.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Guest Room Management Systems</i></h2>
+                                    <a href="img/gallery/grms.jpg">View more</a>						
+                                </figcaption>			
+                            </figure>
+                            <figure class="effect-honey tm-gallery-item nature">
+                                <img src="img/gallery/tn/cctv.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>CCTV and Access Control Systems</i></h2>
+                                    <a href="img/gallery/cctv.jpg">View more</a>						
+                                </figcaption>			
+                            </figure> 
+                            <figure class="effect-honey tm-gallery-item portrait">
+                                <img src="img/gallery/tn/pas.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Public Address & Audio Visual Systems</i></h2>
+                                    <a href="img/gallery/pas.jpg">View more</a>						
+                                </figcaption>			
+                            </figure>
+                            <figure class="effect-honey tm-gallery-item animal">
+                                <img src="img/gallery/tn/intercom.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Video Intercom Systems</i></h2>
+                                    <a href="img/gallery/intercom.jpg">View more</a>						
+                                </figcaption>			
+                            </figure> 
+                            <figure class="effect-honey tm-gallery-item building">
+                                <img src="img/gallery/tn/data.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Structured Cabling System</i></h2>
+                                    <a href="img/gallery/data.jpg">View more</a>						
+                                </figcaption>			
+                            </figure>
+                            <figure class="effect-honey tm-gallery-item portrait">
+                                <img src="img/gallery/tn/ppm.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Planned Preventive Maintenance (PPM)</i></h2>
+                                    <a href="img/gallery/ppm.jpg">View more</a>						
+                                </figcaption>
+			    </figure>
+                            <figure class="effect-honey tm-gallery-item animal">
+                                <img src="img/gallery/tn/elv.jpg" alt="Image"/>
+                                <figcaption>
+                                    <h2><i>Electrical & ELV System Works</i></h2>
+                                    <a href="img/gallery/elv.jpg">View more</a>						
+                                </figcaption>			
+                            </figure>
+                     
+                        </div>
+                    </section>
+                </div>
+                <!-- Partners section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-03.jpg"></div>
+                    <section id="partners" class="tm-section">
+                        <h2 class="tm-text-primary">Our Partners</h2>
+                        <hr class="mb-5">
+                        
+                        <div class="row tm-row-about">
+                            <div class="tm-col-about tm-col-about-l">
+                                <p class="mb-4">
+                            Damatech Trading & Contracting and Services is recognized and certified as an authorized Siemens Advanced Partner – Building Technologies, with the capability to supply, 
+                            program, test, commission, and provide spare parts for the following systems: </p>
+                            </div>
+                    
+                            <div class="tm-col-about tm-col-about-r">
+                                <img src="img/img-about-01.jpg" alt="Image" class="img-fluid mb-5 tm-img-about"> 
+                            </div>
+                     <p>- Building Management Systems (BMS) Desigo™</p> <br>
+                     <p> </p>
+                     <p>- GAMMA™ Lighting Control System (KNX) </p>
+                <!-- Group section -->
+                        <section id="group" class="tm-section">
+                        <h2 class="tm-text-primary">Group Companies</h2>
+                        <hr class="mb-5">
+                         
+                        <div class="row tm-row-about">
+                              <p class="mb-4">
+                            We work together with our group companies to offer you better services. </p>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="tm-carousel">
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-01.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <h2><i>Adma Solutions Contracting</i></h2>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h3 class="mb-3 tm-text-primary tm-about-title">Adma Solutions Contracting</h3>
+                                       
+                                        <h4 class="tm-text-secondary tm-about-subtitle">Saudi Arabia</h4>
+                                    </div>
+                                </div>
+                                
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-02.jpg" alt="Featured Item">
+                                        
+                                        <figcaption>
+                                            <h2><i>Smart Control</i></h2>
+                                        </figcaption>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Damatech Trading & Contracting and Services</h1>
-      <p>Innovative and Energy Efficient Building Technology Solutions</p>
-    </div>
-  </section>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h3 class="mb-3 tm-text-primary tm-about-title">Smart Control</h3>
+                                        
+                                        <h4 class="tm-text-secondary tm-about-subtitle">Jordan</h4>
+                                    </div>
+                                </div>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>
-        About Us
-        <span class="language-toggle" style="float: right;">
-          <button onclick="showLang('en')">English</button>
-          <button onclick="showLang('ar')">العربية</button>
-        </span>
-      </h2>
+                                <div class="tm-carousel-item">
+                                    <figure class="effect-honey mb-4">
+                                        <img src="img/about-03.jpg" alt="Featured Item">
+                                        <figcaption>
+                                            <h2><i>EDMA Renewable Trading</i></h2>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="tm-about-text">
+                                        <h3 class="mb-3 tm-text-primary tm-about-title">Edma Renewable Trading</h3>
+                                        
+                                        <h4 class="tm-text-secondary tm-about-subtitle">Saudi Arabia</h4>
+                                    </div>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-      <div id="about-en" class="lang-content">
-        <p>
-          At Damatech Trading & Contracting and Services, we specialize in delivering cutting-edge solutions and services across a wide range of intelligent building technologies.
-        </p>
-        <p>
-          With deep expertise and a customer-focused approach, we provide comprehensive support for both new installations and ongoing system maintenance.
-        </p>
-        <p>
-          Driven by innovation and reliability, Damatech is your trusted partner for intelligent, efficient, and secure building environments.
-        </p>
-        <h3>Vision</h3>
-        <p>
-          To be the leading provider of smart and energy-efficient building technologies in the region.
-        </p>
-        <h3>Mission</h3>
-        <p>
-          We are committed to providing the highest quality products and services exceeding our client’s expectations.
-        </p>
-        <p>
-          We shall continue to expand in equipment and facilities, and engage in training and certification programs to further serve customers with utmost excellence and professionalism.
-        </p>
-        <p>
-          As we carry out our mission, we shall be guided by values of integrity, reliability, commitment, and collaboration. Our commitment to service is to delivering results, exceeding expectations.
-        </p>
-        <p><a href="assets/company-profile.pdf" download>Download Company Profile</a></p>
-      </div>
+                <!-- Contact section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-04.jpg"></div>
+                    <div id="contact" class="tm-section">
+                        <h2 class="tm-text-primary">Contact Us</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-xl-6 tm-contact-col-l mb-4">
+                                <form id="contact-form" action="https://formsubmit.co/info@damatechqa.com" method="POST" class="tm-contact-form">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control" id="contact-select" name="inquiry">
+                                            <option value="-">Subject</option>
+                                            <option value="sales">Sales &amp; Marketing</option>
+                                            <option value="creative">Support</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
+                                    </div>
+            
+                                    <div class="form-group tm-text-right">
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-6 tm-contact-col-r">
+                                 <!-- Embedded Google Map -->
+                                 <div class="mapouter mb-4">
+                                 <div class="gmap_canvas">
+                                 <iframe width="100%" height="520" id="gmap_canvas"
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.67132123595!2d51.57831777431096!3d25.21430443100959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45cf0007c66599%3A0x6be4c9851342f1a1!2sDamatech%20Trading%20and%20Contracting%20%26%20Services!5e0!3m2!1sen!2sqa!4v1746003357299!5m2!1sen!2sqa" 
+                                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
+                                 </div>
+                                </div>
+            
+                                <!-- Address -->
+                                <address class="mb-4">
+                                    Building No: 11, Office No: 30<br>
+                                    Barwa Village, Airport Road<br>
+                                    Doha, Qatar
+                                </address>
+            
+                                <!-- Links -->
+                                <ul class="tm-contact-links mb-4">
+                                    <li class="mb-2">
+                                            <i class="fas fa-phone mr-2 tm-contact-link-icon"></i>
+                                            Tel: (Landline)  - (+974) 4006 4884<br>
+                                                 (Mobile) - (+974) 6631 7757 / 7080 0705 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:info@damatechqa.com">
+                                            <i class="fas fa-at mr-2 tm-contact-link-icon"></i>
+                                            Email: info@damatechqa.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="tm-contact-social">
+                                    <li><a href="https://fb.com/templatemo" class="tm-social-link"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com" class="tm-social-link"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://instagram.com" class="tm-social-link"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://youtube.com" class="tm-social-link"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div id="about-ar" class="lang-content" style="display: none; direction: rtl; text-align: right;">
-        <p>
-في داماتيك للتجارة والمقاولات والخدمات، نتخصص في تقديم حلول وخدمات متطورة لمجموعة واسعة من تقنيات المباني الذكية.
-        </p>
-        <p>
-بخبرتنا الواسعة ونهجنا الذي يركز على العملاء، نقدم دعمًا شاملًا للتركيبات الجديدة والصيانة المستمرة للأنظمة.
-        </p>
-        <p>
-بفضل الابتكار والموثوقية، داماتيك هي شريككم الموثوق لبيئات بناء ذكية وفعالة وآمنة.
-        </p>
-
-        <h3>الرؤية</h3>
-        <p>
-          أن نكون المزود الرائد لتقنيات المباني الذكية والموفرة للطاقة في المنطقة.
-        </p>
-        <h3>الرسالة</h3>
-        <p>
-          نحن ملتزمون بتقديم أفضل المنتجات والخدمات بجودة عالية تتجاوز توقعات عملائنا.
-        </p>
-        <p>
-          سنواصل التوسع في المعدات والمرافق، والانخراط في برامج التدريب والشهادات لخدمة عملائنا بأعلى درجات التميز والاحترافية.
-        </p>
-        <p>
-          أثناء تنفيذ مهمتنا، سنسترشد بقيم النزاهة والموثوقية والالتزام والتعاون. التزامنا بالخدمة يتمثل في تحقيق النتائج وتجاوز التوقعات.
-        </p>
-        <p><a href="assets/company-profile.pdf" download>تحميل ملف الشركة</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="container">
-      <h2>Our Services</h2>
-      <ul>
-         <p><li>Building Management Systems (BMS)</li>
-      </p>
-         <p><li>HVAC PICV Valve Packages and Actuators</li>
-      </p>
-         <p><li>Lighting Control Systems</li>
-      </p>
-         <p><li>Smart Home Automation</li>
-      </p>
-         <p><li>Guest Room Management Systems</li>
-      </p>
-         <p><li>Curtain, Blinds, and Gate Automation</li>
-      </p>
-         <p><li>Access Control & CCTV Surveillance</li>
-      </p>
-         <p><li>Public Address and Audio-Visual Systems</li>
-      </p>
-         <p><li>Video Intercom Solutions</li>
-      </p>
-         <p><li>Structured Cabling Infrastructure</li>
-      </p>
-         <p><li>Annual Planned Preventive Maintenance (PPM)</li>
-      </p>
-         <p><li>Electrical & ELV System Works</li>
-      </p>
-      </ul>
-    </div>
-  </section>
-
-  <section id="partners" class="section">
-    <div class="container">
-      <h2>Our Partners</h2>
-      <div style="text-align: center;">
-        <img src="assets/siemens.png" alt="Siemens Logo" style="max-width: 250px;" />
-        <p>Advanced Partner - Building Technologies</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="group-companies" class="section">
-    <div class="container">
-      <h2>Our Group Companies</h2>
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 60px;">
-        <div style="text-align: center;">
-          <img src="assets/smart-control.png" alt="Smart Control Jordan" style="max-width: 200px;" />
-          <p>Smart Control - Jordan</p>
-        </div>
-        <div style="text-align: center;">
-          <img src="assets/adma-solutions.png" alt="Adma Solutions Contracting KSA" style="max-width: 200px;" />
-          <p>Adma Solutions Contracting - Saudi Arabia</p>
-        </div>
-        <div style="text-align: center;">
-          <img src="assets/edma-renewable.png" alt="EDMA Renewable Trading KSA" style="max-width: 200px;" />
-          <p>EDMA Renewable Trading - Saudi Arabia</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Address:</p>
-      <p>Building No: 11, Office No: 30</p>
-      <p>Barwa Village, Airport Road</p>
-      <p>Doha, Qatar</p>
-      <p>Phone: +974 4006 4884</p>
-      <p>Mobile: +974 6631 7757, +974 7080 0705</p>
-      <p>Email: info@damatechqa.com</p>
-      <p><a href="https://www.linkedin.com" target="_blank">Visit our LinkedIn</a></p>
-
-      <!-- Embedded Google Map -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.67132123595!2d51.57831777431096!3d25.21430443100959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45cf0007c66599%3A0x6be4c9851342f1a1!2sDamatech%20Trading%20and%20Contracting%20%26%20Services!5e0!3m2!1sen!2sqa!4v1746003357299!5m2!1sen!2sqa" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-
-      <h3>Enquiry Form</h3>
-      <form action="https://formsubmit.co/info@damatechqa.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required><br>
-        <input type="email" name="email" placeholder="Your Email" required><br>
-        <textarea name="message" placeholder="Your Message" required></textarea><br>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Damatech Trading & Contracting and Services. All rights reserved.</p>
-  </footer>
+                <!-- Copyright -->                
+                <div class="tm-section-wrap tm-copyright row">
+                    <div class="col-12">
+                        <div class="text-right">
+                            © 2025 Damatech Trading & Contracting and Services. All rights reserved.
+                        </div> 
+                    </div>
+                </div>                 
+            </div> <!-- .tm-main -->                      
+        </div> <!-- .row -->
+    </div> <!-- .container-fluid -->
+    <script src="js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
+    <script src="js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
+    <script src="js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>     <!-- https://imagesloaded.desandro.com/ -->
+    <script src="js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
+    <script src="js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <script src="slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
+    <script src="js/templatemo-script.js"></script>
 </body>
-</html>
+</html> 
