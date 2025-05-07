@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /login
+Allow: /
 
-Sitemap: https://damatechqa.com/sitemap.xml
+Sitemap: https://www.damatechqa.com/sitemap.xml
